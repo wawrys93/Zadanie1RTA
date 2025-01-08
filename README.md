@@ -2,6 +2,9 @@
 
 ## Opis projektu
 
+Przygotowanie serwisu www pozwalającego odpytać utworzony model (najlepiej jakieś wyszukiwanie anomalii) i generujący score dla danego wiersza danych  (tutaj polecam Flask, FastApi etc). 
+Ponadto serwis ten powinien być wystawiony przez w obrazie Dockerowym tak by można go uruchomić na dowolnym komputerze - czy to stacjonarnym czy chmurowym .  
+
 Ten projekt implementuje serwis WWW do wykrywania anomalii w danych wejściowych przy użyciu modelu Isolation Forest. Serwis został napisany w Pythonie z użyciem Flask i umożliwia łatwe uruchomienie w kontenerze Docker.
 
 ## Funkcjonalności
@@ -56,6 +59,3 @@ curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -
 - Pandas
 - Scikit-learn
 - Joblib
-
-## Autor
-Projekt przygotowany jako część zadania zaliczeniowego z przedmiotu Programowanie Aplikacji Webowych.
